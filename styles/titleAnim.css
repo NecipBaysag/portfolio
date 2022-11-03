@@ -1,0 +1,15 @@
+
+.headerAnim span {
+  transition: all 0.4s ease-in-out;
+}
+.headerAnim:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff,
+    0 0 120px #fff, 0 0 160px #fff;
+}
+.headerAnim:hover span:first-child {
+  margin-right: 10px;
+} 
+.headerAnim:hover span:last-child {
+  margin-left: 40px;
+}

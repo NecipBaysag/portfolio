@@ -1,5 +1,32 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');*/
+
+html {
+  --scrollbarBG: #3d3d3d00;
+  --thumbBG: #9c27b0;
+}
+body::-webkit-scrollbar, .imgliste::-webkit-scrollbar {
+  width: 20px;
+  background-color: black;
+}
+body, .imgliste {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) black;
+  background-color: black;
+}
+body::-webkit-scrollbar-track, .imgliste::-webkit-scrollbar-track {
+  background: black;
+  margin: 10px 0 10px 0;
+}
+body::-webkit-scrollbar-thumb, .imgliste::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
 html,
 body {
+  scroll-behavior: smooth;
+  background-color: black;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -23,4 +50,36 @@ a {
     color: white;
     background: black;
   }
+}
+
+.img-bg {
+  position: absolute;
+  background-image: linear-gradient(-45deg, #9c27b0 50%, #47caff 50%);
+  border-radius: 50%;
+  filter: blur(72px);
+
+}
+
+
+.techsHeader:hover{
+  transition: all 0.4s ease-in-out;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff,
+    0 0 100px #fff, 0 0 140px #fff;
+   
+}
+
+.workLink:hover{
+  transition: all 1.4s ease-in-out;
+  color: #b92ed2;
+  text-shadow: 0px 0px 5px #fff;
+  
+
+}
+
+.showModelCard{
+  min-width: 100%;
+  min-height: 30em;
+  background-image:linear-gradient(to bottom right, rgba(255,255,255,0.2), rgba(255,255,255,0));
+  backdrop-filter: "blur(10px)"; 
+  box-shadow: 10px 10px 10px rgba(30,30,30,0.5);
 }
